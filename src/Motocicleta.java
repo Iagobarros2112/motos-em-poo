@@ -5,7 +5,6 @@ public abstract class Motocicleta {
     public String Modelo;
     public String Cor;
     public String Placa;
-    private boolean Ligada;
     public abstract void mostrarDados() ;
 
     //métodos de modelo
@@ -54,22 +53,7 @@ public abstract class Motocicleta {
 
     }
     
-     //métodos de ligada
-     void ligar() {
-
-        this.Ligada = true;
-     }
-
-     void desligar() {
-
-        this.Ligada = false;
-     }
     
-  
-
-  
-        
-
 
     }
 
