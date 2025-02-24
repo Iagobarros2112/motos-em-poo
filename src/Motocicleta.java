@@ -1,11 +1,12 @@
 //classe generica principal
-public class Motocicleta {
+public abstract class Motocicleta {
     
     //atributos
-    private String Modelo;
-    private String Cor;
-    private String Placa;
+    public String Modelo;
+    public String Cor;
+    public String Placa;
     private boolean Ligada;
+    public abstract void mostrarDados() ;
 
     //métodos de modelo
     public String getModelo() {
@@ -66,31 +67,19 @@ public class Motocicleta {
     
   
 
-    public void statusDamoto () {
-        System.out.println("A Motocicleta No Modelo :\n" + this.Modelo);
-        System.out.println("Na Cor : \n" + this.Cor);
-        System.out.println("De placa: \n" + this.Placa);
-        System.out.println("Está ligada?\n" + this.Ligada);
-
-        
+  
         
 
 
     }
 
-    public Motocicleta () {
-        this.Modelo = "sem nome";
-        this.Cor = "sem cor";
-        this.Placa = "sem placa";
-        this.Ligada = false;
-    }
-
+ 
    
 
 
 
 
-}
+
 
 
 
